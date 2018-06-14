@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <ImageView
+            android:id="@+id/iconIv"
+            android:layout_width="118dp"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:padding="8dp"
+            android:id="@+id/titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconIv"
+            android:gravity="center_vertical"
+            android:text="GP 40.10"
+            android:textSize="25sp" />
+
+        <TextView
+            android:padding="8dp"
+            android:id="@+id/descriptionTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTv"
+            android:layout_toEndOf="@id/iconIv"
+            android:text="Grúa Torre con capacidad maxima de 1 tonelada en punta." />
+
+        <TextView
+            android:padding="8dp"
+            android:layout_toEndOf="@id/iconIv"
+            android:text="Agregar a favoritos"
+            android:layout_below="@id/descriptionTv"
+            android:id="@+id/favoritesTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:padding="8dp"
+            android:layout_alignEnd="@id/descriptionTv"
+            android:layout_below="@id/descriptionTv"
+            android:id="@+id/selectedCb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>
